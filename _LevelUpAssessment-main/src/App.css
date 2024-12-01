@@ -1,0 +1,305 @@
+:root {
+  --black: #080808;
+  --white: #e3f0d3;
+  --red: #ed2224;
+  --blue: #31ade3;
+  --green: #71c389;
+  --orange: #f1a51f;
+}
+
+.orbitron-regular {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.orbitron-bold {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.micro-5 {
+  font-family: "Micro 5", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: var(--black);
+  position: relative;
+}
+
+/* CREATE */
+.create {
+  color: var(--white);
+  width: 100%;
+  margin: auto;
+  margin: 0;
+}
+
+.create header h1 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.create header {
+  display: flex;
+  gap: 1rem;
+
+  width: 95%;
+  justify-items: center;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: auto;
+  margin-top: 2rem;
+}
+.create header aside {
+  width: 100%;
+}
+.create header aside li {
+  width: 100%;
+  height: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+
+/* Media queries for rainbows */
+
+@media (max-width: 800px) {
+  .create header h1 {
+    font-size: 1.2rem;
+  }
+}
+
+.create form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  grid-gap: 2rem;
+  margin: auto;
+}
+
+input:focus {
+  outline: none;
+}
+.create form label {
+  color: var(--orange);
+  display: block;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+.create form div {
+  width: 100%;
+}
+.create form input {
+  background: none;
+  display: grid;
+  gap: 0;
+  width: 100%;
+  border-bottom: 1px solid var(--white);
+}
+
+.create form button {
+  background-color: var(--red);
+  color: var(--white);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+/* form media */
+
+@media (max-width: 900px) {
+  .create form {
+    display: block;
+    justify-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  .create form div {
+    position: relative;
+    width: 100%;
+  }
+
+  .create form button {
+    justify-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* Actions */
+
+#actions button {
+  border-radius: 1rem;
+  margin-left: 0.5rem;
+  font-size: 0.5rem;
+  cursor: pointer;
+  padding: 0.4rem;
+  width: 150px;
+}
+
+/* VIEW GRADUATE */
+.create h1.name {
+  background-color: var(--white);
+  color: var(--black);
+  width: 95%;
+  margin: auto;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+  text-transform: capitalize;
+}
+
+.create div.credentials {
+  gap: 2rem;
+  margin: auto;
+  margin-top: 1.5rem;
+  width: 95%;
+ 
+}
+.create div.credentials div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 1rem;
+  gap: 1rem;
+}
+
+.create div.credentials div span.span {
+  border-left: 1px solid var(--white);
+  padding-left: 1rem;
+}
+
+.create div.credentials div.first_row {
+  border-bottom: 1px solid var(--white);
+  margin-bottom: 1rem;
+}
+
+.create div.credentials span p {
+  color: var(--orange);
+  font-size: 0.7rem;
+}
+
+/* View all */
+
+table {
+  color: var(--black);
+}
+
+table tr {
+  border: 2px solid var(--white);
+}
+#view_all .modal_container {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: auto;
+  align-items: center;
+  justify-items: center;
+}
+
+.modal_container .modal {
+  background-color: var(--white);
+  padding: 2rem 3rem;
+  color: var(--black);
+  text-align: center;
+  line-height: 1.2;
+  display: grid;
+  align-items: center;
+}
+
+.modal_container .modal p {
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+.modal_container .modal h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.modal_container .modal .buttons {
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+.modal_container .modal button {
+  display: grid;
+  font-weight: bold;
+  margin-top: 1rem;
+  width: 100%;
+  border: 2px solid;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+/* Welcome */
+
+.welcome {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../public/assets/backgrounds/space-background.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.welcome header {
+  display: grid;
+  justify-items: center;
+}
+.welcome header img {
+  width: 150px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.welcome .text {
+  width: 100%;
+}
+.welcome .text button {
+  margin-top: 1rem;
+  color: var(--white);
+  background-color: var(--red);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.welcome .text ul {
+  margin-top: 2rem;
+}
+.welcome .text ul li {
+  width: 100%;
+  height: 0.5rem;
+  margin-top: 0.1rem;
+}
+.welcome .text img {
+  width: 100%;
+}
+
+.welcome section {
+  display: flex;
+  padding: 0 3rem;
+}
+
+.welcome .img {
+  width: 100%;
+}
+.welcome .img img {
+  width: 100%;
+}
+
+/* Welcom media queiries */
+
+@media (max-width: 800px) {
+  .welcome section {
+    display: grid;
+  }
+}
